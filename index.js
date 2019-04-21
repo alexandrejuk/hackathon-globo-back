@@ -75,4 +75,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/api', route)
 
-app.listen(3003, () => console.log('run...'))
+const port = process.env.PORT || 3003
+
+app.listen(port, () => console.log('run...'))
